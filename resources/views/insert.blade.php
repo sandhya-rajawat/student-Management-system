@@ -1,7 +1,8 @@
 @vite('resources/css/app.css')
     @include('header')
 <div class="bg-gray-300 flex-1 min-h-[calc(100vh-120px)] p-20">
-<form class="bg-white p-6 rounded-lg shadow-md mx-auto max-w-md" >
+<form class="bg-white p-6 rounded-lg shadow-md mx-auto max-w-md" action="{{url('addData')}}" method="Post" >
+    @csrf
     <h2 class="text-2xl font-bold mb-4 text-center text-gray">Add New Student</h2>
     <div class="mb-4">
         <label  for="name" class="block text-sm font-medium text-gray-700">Name</label>

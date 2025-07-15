@@ -26,7 +26,8 @@ class student extends Controller
     //dataShow...................................................
     function FetchData()
     {
-        $data = studentmst::all();
+        // $data = studentmst::all();
+        $data=studentmst::paginate(10);
         return view('index', ['DbData' => $data]);
     }
     // delete data..............................................

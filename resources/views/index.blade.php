@@ -3,6 +3,7 @@
 <div class="bg-gray-300 flex-1 min-h-[calc(100vh-120px)] p-5">
 
   <!-- {{print_r($DbData)}} -->
+<input type="text" >
 
   <table class="border-gray-400 w-full table-auto border">
 
@@ -30,5 +31,8 @@
     </tr>
     @endforeach
   </table>
+  <div class="mt-8 flex justify-center ">
+    {{$DbData->links()}}
+  </div>
 </div>
 @include('footer')

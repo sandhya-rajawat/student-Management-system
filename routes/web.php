@@ -9,6 +9,7 @@ Route::get('/', function () {
 
 // header
 Route::view('header','header');
+Route::view('about','about');
 
 Route::view('footer','footer');
 // Route::view('main','MainFile');

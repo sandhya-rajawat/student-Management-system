@@ -31,3 +31,4 @@ Route::get('insertData',[student::class,'FetchData']);
 Route::get('insert/{id}',[student::class,'DeleteData']);
 Route::get('update/{id}',[student::class,'edit']);
 Route::put('edit/{id}', [student::class, 'UpdateData']);
+Route::get('search', [student::class, 'search']);

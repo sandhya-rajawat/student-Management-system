@@ -27,7 +27,7 @@ class student extends Controller
     function FetchData()
     {
         // $data = studentmst::all();
-        $data=studentmst::paginate(10);
+        $data = studentmst::paginate(10);
         return view('index', ['DbData' => $data]);
     }
     // delete data..............................................
@@ -44,18 +44,30 @@ class student extends Controller
     function edit($id)
     {
         $data = studentmst::find($id);
-        return view('edit',['UpdateData'=>$data]);
+        return view('edit', ['UpdateData' => $data]);
     }
-    function UpdateData(Request $rst,$id){
-        $data=studentmst::find($id);
+    function UpdateData(Request $rst, $id)
+    {
+        $data = studentmst::find($id);
         $data->name = $rst->name;
         $data->email = $rst->email;
         $data->phone = $rst->phone;
         $data->city = $rst->city;
-        if($data->save()){
+        if ($data->save()) {
             return redirect('insertData')->with('success', "Student update deleted.");
-        }else{
-             return redirect('insertData')->with('error', "Something went wrong.");
+        } else {
+            return redirect('insertData')->with('error', "Something went wrong.");
         }
+    }
+    // serch........................................................
+    function search(Request $rst)
+    {
+        $search = $rst->search;
+
+        // Step 1: variable define
+        $DbData = studentmst::where('name', 'like', "%{$search}%")->paginate(10);
+
+        // Step 2: compact use
+        return view('index', compact('DbData'));
     }
 }

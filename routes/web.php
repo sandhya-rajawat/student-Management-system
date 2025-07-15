@@ -10,3 +10,4 @@ Route::get('/', function () {
 Route::view('header','header');
 Route::view('footer','footer');
 Route::view('main','MainFile');
+Route::view('insert','insert');

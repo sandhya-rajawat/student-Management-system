@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\home_section;
 use App\Models\home02_section;
 use App\Models\home_message;
+use App\Models\teacher;
+
 
 use Illuminate\Http\Request;
 
@@ -89,6 +91,12 @@ class student_home extends Controller
     return view('home_message',['message'=>$messageGet]);
 
    }
+//    about page...........
+// insert
+function insertTeacherDetail(){
+    return "add";
+}
+
 
 
 

@@ -38,6 +38,9 @@ return view('about/school_time');
 Route::get('teacher',function(){
 return view('about/teacher');
 });
+Route::get('teacher_form',function(){
+return view('about/teacher_form');
+});
 
 
 
@@ -52,3 +55,6 @@ Route::get('/',[student_home::class,'DataFetch']);
 // message insertMessage
 Route::post('insertMessage',[student_home::class,'insertMessage']);
 Route::get('Head_Department_message',[student_home::class,'GetMessage']);
+
+// about_teacher 
+Route::post('insertTeacherDetail',[student_home::class,'insertTeacherDetail']);

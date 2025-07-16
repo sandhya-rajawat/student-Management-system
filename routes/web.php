@@ -24,6 +24,11 @@ Route::get('home02_section',function(){
 // home_message_view
 Route::get('message',function(){
 return view('home_message');
+
+});
+// home_message_form
+Route::get('head_message',function(){
+return view('message');
 });
 // about_scool_time
 Route::get('schooltime',function(){
@@ -43,3 +48,7 @@ Route:: get('/',[student_home::class,'DataShow']);
 // keyfeature_home
 Route::post('home02_section',[student_home::class,'Datainsert']);
 Route::get('/',[student_home::class,'DataFetch']);
+
+// message insertMessage
+Route::post('insertMessage',[student_home::class,'insertMessage']);
+Route::get('Head_Department_message',[student_home::class,'GetMessage']);

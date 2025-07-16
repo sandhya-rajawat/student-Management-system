@@ -19,43 +19,25 @@
                 <h1 class="text-3xl font-bold text-gray-800">
                     Head Of Department
                 </h1>
+                <div class="grid md:grid-cols-3 gap-6">
 
-                <!-- Cards in grid -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+                    @foreach($message as $iteam)
 
-                    <!-- Principal -->
-                    <div class="bg-white rounded-xl shadow-md p-6 text-center">
-                        <img src="{{ asset('image/teacher.avif') }}" alt="Principal" class="w-32 h-32 mx-auto rounded-full object-cover mb-4">
-                        <p class="text-xl font-semibold">Mrs. A. Sharma</p>
-                        <p class="text-gray-600">Principal</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit odio quod placeat, rem similique, natus laudantium fugit temporibus repudiandae pariatur iure molestias voluptates quia nobis, architecto at dignissimos rerum?
-                            Ad placeat quidem nulla doloribus pariatur rerum, aliquid laudantium molestias repudiandae quia quos natus nostrum corrupti fugiat cupiditate obcaecati alias. Aspernatur sequi atque obcaecati debitis qui necessitatibus delectus facilis libero?</p>
+                    <div class="bg-white p-4 rounded-xl shadow-md">
+                        <img src="{{ asset('uploads/' . $iteam->image) }}" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" alt="Blog Image">
+                        <p class=" text-center mb-1 text-gray-700 text-sm mb-3 text-center bg-red-50 font-semibold" >{{$iteam->name}}</p>
+                        <p class=" text-center mb-2">{{ $iteam->title }}</p>
+                        <h1 class="text-xl text-center mb-1">{{ $iteam->description }}</h1>
+                        <div class="flex space-x-4 text-gray-600 text-sm mt-2">
+                            <p>Created: {{ $iteam->created_at->format('d M Y') }}</p>
+                            <p>Updated: {{ $iteam->updated_at->format('d M Y') }}</p>
+                        </div>
                     </div>
-
-                    <!-- Director -->
-                    <div class="bg-white rounded-xl shadow-md p-6 text-center">
-                        <img src="{{ asset('image/teacher.avif') }}" alt="Director" class="w-32 h-32 mx-auto rounded-full object-cover mb-4">
-                        <p class="text-xl font-semibold">Mr. B. Verma</p>
-                        <p class="text-gray-600">Director</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit odio quod placeat, rem similique, natus laudantium fugit temporibus repudiandae pariatur iure molestias voluptates quia nobis, architecto at dignissimos rerum?
-                            Ad placeat quidem nulla doloribus pariatur rerum, aliquid laudantium molestias repudiandae quia quos natus nostrum corrupti fugiat cupiditate obcaecati alias. Aspernatur sequi atque obcaecati debitis qui necessitatibus delectus facilis libero?</p>
-
-                    </div>
-
-                    <!-- Founder -->
-                    <div class="bg-white rounded-xl shadow-md p-6 text-center">
-                        <img src="{{ asset('image/teacher.avif') }}" alt="Founder" class="w-32 h-32 mx-auto rounded-full object-cover mb-4">
-                        <p class="text-xl font-semibold">Dr. C. Singh</p>
-                        <p class="text-gray-600">Founder</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem impedit odio quod placeat, rem similique, natus laudantium fugit temporibus repudiandae pariatur iure molestias voluptates quia nobis, architecto at dignissimos rerum?
-                            Ad placeat quidem nulla doloribus pariatur rerum, aliquid laudantium molestias repudiandae quia quos natus nostrum corrupti fugiat cupiditate obcaecati alias. Aspernatur sequi atque obcaecati debitis qui necessitatibus delectus facilis libero?</p>
-                    </div>
-
+                    @endforeach
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-</div>
 
-@include('footer')
+    @include('footer')

@@ -37,3 +37,4 @@ Route::get('homesection',function(){
 
 // controllers
 Route:: post('homesectionOne',[student_home::class,'DataGet']);
+Route:: get('/',[student_home::class,'DataShow']);

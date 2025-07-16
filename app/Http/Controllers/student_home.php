@@ -22,5 +22,9 @@ class student_home extends Controller
     }
 
     // dataShow
+    function DataShow(){
+        $data=home_section::latest()->first();
+        return view('home',['data'=>$data]);
+    }
     
 }

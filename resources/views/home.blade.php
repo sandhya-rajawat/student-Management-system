@@ -4,10 +4,12 @@
 <!-- Hero Section -->
 <div>
   <img src="{{ asset('image/students.webp') }}" alt="students" class="w-screen h-[400px] object-cover">
-  <div class="absolute top-[150px] left-10 bg-white/80 p-6 rounded-xl shadow-lg max-w-lg">
-    <h1 class="text-4xl font-bold text-gray-800">Welcome to Our Student Management System</h1>
-    <p class="mt-4 text-gray-700">Manage students, track performance, and stay organized with ease.</p>
+  
+ <div class="absolute top-[150px] left-10 bg-white/80 p-6 rounded-xl shadow-lg max-w-lg">
+    <h1 class="text-4xl font-bold text-gray-800">{{$data->title}}</h1>
+    <p class="mt-4 text-gray-700">{{$data->description}}</p>
   </div>
+ 
 </div>
 
 <!-- About Section -->

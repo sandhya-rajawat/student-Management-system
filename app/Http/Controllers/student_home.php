@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class student_home extends Controller
 {
     // datainsert
-    function DataGet(Request $rst){
+    function DataInser(Request $rst){
         $data= new home_section;
         $data->title=$rst->title;
         $data->description=$rst->description;

@@ -12,36 +12,25 @@ Route::get('/', function () {
 Route::view('header','header');
 Route::view('footer','footer');
 Route::view('/','home');
-
-
-
-
-
-
-// controllers
-// Route::post('addData',[student::class,'insertData']);
-// Route::get('insertData',[student::class,'FetchData']);
-// Route::get('insert/{id}',[student::class,'DeleteData']);
-// Route::get('update/{id}',[student::class,'edit']);
-// Route::put('edit/{id}', [student::class, 'UpdateData']);
-// Route::get('search', [student::class, 'search']);
-
-
-
 //home section
 
 Route::get('homesection',function(){
  return view('home_section');
 });
+
 Route::get('home02_section',function(){
  return view('home02_section');
 });
+// home_message_view
+Route::get('message',function(){
+return view('home_message');
+});
 
 
-// controllers
-Route:: post('homesectionOne',[student_home::class,'DataGet']);
+// controllers_home
+Route:: post('homesectionOne',[student_home::class,'DataInser']);
 Route:: get('/',[student_home::class,'DataShow']);
 
-// keyfeature
+// keyfeature_home
 Route::post('home02_section',[student_home::class,'Datainsert']);
 Route::get('/',[student_home::class,'DataFetch']);

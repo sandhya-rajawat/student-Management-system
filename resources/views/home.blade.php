@@ -28,12 +28,12 @@
       <p>Quickly create, update or delete student records with ease.</p>
     </div>
     <div class="bg-white p-6 rounded-xl shadow-md">
-         <img src="{{asset('image/key_fetures2.jpeg')}}"class="w-xl">
+         <img src="{{asset('image/key_fetcures2.webp')}}"class="w-xl">
       <h3 class="text-xl font-semibold mb-2">Responsive UI</h3>
       <p>Clean and intuitive user interface built with Tailwind CSS.</p>
     </div>
     <div class="bg-white p-6 rounded-xl shadow-md">
-         <img src="{{asset('image/key_fetures2.jpeg')}}"class="w-xl">
+         <img src="{{asset('image/key_fetcures2.webp')}}"class="w-xl">
       <h3 class="text-xl font-semibold mb-2">Secure Authentication</h3>
       <p>Session-based login to keep your data safe and access restricted.</p>
     </div>

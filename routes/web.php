@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\student;
+use App\Http\Controllers\student_home;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,3 +25,15 @@ Route::view('/','home');
 // Route::get('update/{id}',[student::class,'edit']);
 // Route::put('edit/{id}', [student::class, 'UpdateData']);
 // Route::get('search', [student::class, 'search']);
+
+
+
+//home section
+
+Route::get('homesection',function(){
+ return view('home_section');
+});
+
+
+// controllers
+Route:: post('homesectionOne',[student_home::class,'DataGet']);

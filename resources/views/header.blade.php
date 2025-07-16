@@ -1,22 +1,24 @@
 @vite('resources/css/app.css')
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-md">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="{{ asset('image/logo.png') }}" alt="Logo" class="h-10" />
+      <h1 class="text-xl font-bold text-blue-900">𝙎𝙝𝙞𝙠𝙨𝙝𝙖</h1>
+    </div> 
 
-<header>
-    <div class="flex justify-between items-center bg-gray-500 h-16 text-white px-4">
+ <!-- Navigation Links  -->
+    <nav class="flex space-x-6 text-sm font-medium text-gray-800">
+      <a href="#" class="hover:text-green-700">Home</a>
+      <a href="#" class="hover:text-green-700">New</a>
+      <a href="#" class="hover:text-green-700">About School</a>
+      <a href="#" class="hover:text-green-700">Facilities</a>
+      <a href="#" class="hover:text-green-700">Activities</a>
+      <a href="#" class="hover:text-green-700">Others</a>
+      <a href="#" class="hover:text-green-700">Pre-Primary</a>
+    </nav>
 
-        {{-- Left: Logo + SCHOOL close together --}}
-        <div class="flex items-center">
-            <img src="{{ asset('image/logo.jpg') }}" alt="logo" class="w-10 h-10 rounded mr-2">
-            <h1 class="text-xl font-bold">🆂🅲🅷🅾🅾🅻</h1>
-        </div>
 
-        {{-- Right: Nav Links --}}
-        <nav class="flex items-center">
-            <a href="insert" class="ml-4 hover:text-black">New</a>
-            <a href="insertData" class="ml-4 hover:text-black">Home</a>
-            <a href="about" class="ml-4 hover:text-black">About</a>
-            <a href="#" class="ml-4 hover:text-black">Contact</a>
-            <a href="#" class="ml-4 hover:text-black">Login</a>
-        </nav>
-
-    </div>
+   
+  </div>
 </header>

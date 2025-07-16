@@ -3,13 +3,13 @@
 <header>
     <div class="flex justify-between items-center bg-gray-500 h-16 text-white px-4">
 
-        {{-- ✅ Left: Logo + SCHOOL close together --}}
+        {{-- Left: Logo + SCHOOL close together --}}
         <div class="flex items-center">
             <img src="{{ asset('image/logo.jpg') }}" alt="logo" class="w-10 h-10 rounded mr-2">
-            <h1 class="text-xl font-bold">𝖘𝖈𝖍𝖔𝖔𝖑</h1>
+            <h1 class="text-xl font-bold">🆂🅲🅷🅾🅾🅻</h1>
         </div>
 
-        {{-- ✅ Right: Nav Links --}}
+        {{-- Right: Nav Links --}}
         <nav class="flex items-center">
             <a href="insert" class="ml-4 hover:text-black">New</a>
             <a href="insertData" class="ml-4 hover:text-black">Home</a>

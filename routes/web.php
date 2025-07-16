@@ -25,6 +25,15 @@ Route::get('home02_section',function(){
 Route::get('message',function(){
 return view('home_message');
 });
+// about_scool_time
+Route::get('schooltime',function(){
+return view('about/school_time');
+});
+// about_scool_teacher
+Route::get('teacher',function(){
+return view('about/teacher');
+});
+
 
 
 // controllers_home

@@ -33,8 +33,15 @@ Route::view('/','home');
 Route::get('homesection',function(){
  return view('home_section');
 });
+Route::get('home02_section',function(){
+ return view('home02_section');
+});
 
 
 // controllers
 Route:: post('homesectionOne',[student_home::class,'DataGet']);
 Route:: get('/',[student_home::class,'DataShow']);
+
+// keyfeature
+Route::post('home02_section',[student_home::class,'Datainsert']);
+Route::get('/',[student_home::class,'DataFetch']);

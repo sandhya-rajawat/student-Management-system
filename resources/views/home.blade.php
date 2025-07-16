@@ -21,26 +21,22 @@
 </div>
 
 <!-- Features Section -->
+
 <div class="p-10">
   <h2 class="text-3xl font-bold mb-6 text-center">Key Features</h2>
+  @foreach($features  as $iteam)
   <div class="grid md:grid-cols-3 gap-6">
     <div class="bg-white p-6 rounded-xl shadow-md">
-        <img src="{{asset('image/key_fetcures1.webp')}}"class="w-xl">
-       <h3 class="text-xl font-semibold mb-2">Add & Manage Students</h3>
-      <p>Quickly create, update or delete student records with ease.</p>
+        <img src="{{asset('uploads/'.$iteam->image)}}"class="w-xl">
+       <h3 class="text-xl font-semibold mb-2">{{$iteam->title}}</h3>
+      <p>{{$iteam->description}}</p>
     </div>
-    <div class="bg-white p-6 rounded-xl shadow-md">
-         <img src="{{asset('image/key_fetcures2.webp')}}"class="w-xl">
-      <h3 class="text-xl font-semibold mb-2">Responsive UI</h3>
-      <p>Clean and intuitive user interface built with Tailwind CSS.</p>
-    </div>
-    <div class="bg-white p-6 rounded-xl shadow-md">
-         <img src="{{asset('image/key_fetcures2.webp')}}"class="w-xl">
-      <h3 class="text-xl font-semibold mb-2">Secure Authentication</h3>
-      <p>Session-based login to keep your data safe and access restricted.</p>
-    </div>
+    
+    
   </div>
+  @endforeach
 </div>
+
 
 <!-- Call to Action -->
 <div class="bg-blue-200 text-white p-5 text-center">

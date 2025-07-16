@@ -2,7 +2,7 @@
 
 <footer class="mt-auto backdrop-blur-md shadow-md">
   <div class="bg-gray-200 p-6 text-gray-800">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-1">
       
       <!-- Left: Logo + School Info -->
       <div class="flex items-center gap-4">
@@ -20,7 +20,10 @@
         <a href="#"><img src="{{asset('image/facebook.png')}}" class="w-6"></a>
         <a href="#"><img src="{{asset('image/twitter.png')}}" class="w-6"></a>
         <a href="#"><img src="{{asset('image/message.png')}}" class="w-6"></a>
-      </div>
     </div>
+
+    </div>
+
 </div>
+   
 </footer>

@@ -8,15 +8,38 @@
     </div> 
 
  <!-- Navigation Links  -->
-    <nav class="flex space-x-6 text-sm font-medium text-gray-800">
-      <a href="/" class="hover:text-green-700">Home</a>
-      <a href="#" class="hover:text-green-700">New</a>
-      <a href="#" class="hover:text-green-700">About School</a>
-      <a href="#" class="hover:text-green-700">Facilities</a>
-      <a href="#" class="hover:text-green-700">Activities</a>
-      <a href="#" class="hover:text-green-700">Others</a>
-      <a href="#" class="hover:text-green-700">Pre-Primary</a>
-    </nav>
+   <nav>
+  <ul class="flex space-x-6 text-sm font-medium text-gray-800 gap-20">
+
+    <li><a href="/" class="hover:text-green-700">Home</a></li>
+    <li class="nav-item nav-dropdown group relative">
+                    <span class="nav-link inline-flex items-center">
+                        Form
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                    </span>
+                <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 bg-white">
+
+                    <li class="nav-dropdown-item">
+                        <a href="home_section" class="nav-dropdown-link">wellcome Add</a>
+                    </li>
+                    
+                   
+                    
+                </ul>
+            </li>
+
+  
+    <li><a href="#" class="hover:text-green-700">About School</a></li>
+    <li><a href="#" class="hover:text-green-700">Facilities</a></li>
+    <li><a href="#" class="hover:text-green-700">Activities</a></li>
+    <li><a href="#" class="hover:text-green-700">Contact Us</a></li>
+    <li><a href="#" class="hover:text-green-700">Pre-Primary</a></li>
+
+  </ul>
+</nav>
+
 
 
    

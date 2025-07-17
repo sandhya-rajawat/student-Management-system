@@ -7,6 +7,7 @@ use App\Models\home02_section;
 use App\Models\home_message;
 use App\Models\home_teacher;
 use App\Models\school_time;
+use App\Models\school_event;
 
 
 use Illuminate\Http\Request;
@@ -139,6 +140,25 @@ function FetchSchoolTime(){
     return view('about/schoolTime',['GetTimeInfo'=> $GetTime]);
 }
 
+// School_Evets............
+
+function insertSchoolEvents(Request $request){
+$DataSchoolEvents=new school_event();
+$DataSchoolEvents->name=$request->name;
+$DataSchoolEvents->title=$request->title;
+if($request->hasFile('image')){
+    $file=$request->file('image');
+    $filename=time().".".$file->getClientOriginalExtension();
+    $file->move(public_path('uploads'),$filename);
+    $DataSchoolEvents->image=$filename;
+     if ($DataSchoolEvents->save()) {
+
+            return redirect('/')->with("success", 'Details added successfully!');
+        } else {
+            return  redirect('/')->with("Error", "Somthing Wrong");
+        }
+}
+}
 
 
 

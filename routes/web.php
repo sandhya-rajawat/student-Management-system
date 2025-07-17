@@ -46,6 +46,15 @@ Route::get('schooltime_form', function () {
     return view('schooltime_form');
 });
 
+// Events
+Route::get('event', function () {
+    return view('about/event');
+});
+
+// Events form
+Route::get('event_form', function () {
+    return view('school_event_form');
+});
 
 
 
@@ -87,3 +96,7 @@ Route::get('teachers_team', [student_home::class, 'GetTeacherDetail']);
 // schooltime 
 Route::post('insertSchoolTime', [student_home::class, 'insertSchoolTime']);
 Route::Get('school_time', [student_home::class, 'FetchSchoolTime']);
+
+
+// school_evets 
+Route::post('insertSchoolEvents', [student_home::class, 'insertSchoolEvents']);

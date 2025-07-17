@@ -41,6 +41,9 @@
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:text-white">
                             <a href="schooltime_form" class="nav-dropdown-link">schooltime_form</a>
                         </li>
+                        <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:text-white">
+                            <a href="event_form" class="nav-dropdown-link">event_form</a>
+                        </li>
 
 
 

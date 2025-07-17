@@ -6,6 +6,7 @@ use App\Models\home_section;
 use App\Models\home02_section;
 use App\Models\home_message;
 use App\Models\home_teacher;
+use App\Models\school_time;
 
 
 use Illuminate\Http\Request;
@@ -116,6 +117,30 @@ function GetTeacherDetail(){
     $GetDataDetail=home_teacher::all();
     return view('about.teacher',['teacherInfo'=>$GetDataDetail]);
 }
+
+
+// schoolTime....
+// insert
+function insertSchoolTime(Request $request){
+   $DataSclTime= new school_time();
+   $DataSclTime->title=$request->title;
+   $DataSclTime->day=$request->day;
+  if ($DataSclTime->save()) {
+
+            return redirect('/')->with("success", 'Details added successfully!');
+        } else {
+            return  redirect('/')->with("Error", "Somthing Wrong");
+        }
+}
+
+// Fetch data
+function FetchSchoolTime(){
+    $GetTime=school_time::all();
+    return view('about/schoolTime',['GetTimeInfo'=> $GetTime]);
+}
+
+
+
 
 
 

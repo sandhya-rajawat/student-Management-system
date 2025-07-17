@@ -31,7 +31,7 @@ Route::get('head_message', function () {
 });
 // about_scool_time
 Route::get('schooltime', function () {
-    return view('about/school_time');
+    return view('about/schoolTime');
 });
 // about_scool_teacher
 Route::get('teacher', function () {
@@ -40,6 +40,30 @@ Route::get('teacher', function () {
 Route::get('teacher_form', function () {
     return view('about/teacher_form');
 });
+
+// schoolTIme_Form
+Route::get('schooltime_form', function () {
+    return view('schooltime_form');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -58,3 +82,8 @@ Route::get('Head_Department_message', [student_home::class, 'GetMessage']);
 // about_teacher 
 Route::post('insertTeacherDetail', [student_home::class, 'insertTeacherDetail']);
 Route::get('teachers_team', [student_home::class, 'GetTeacherDetail']);
+
+
+// schooltime 
+Route::post('insertSchoolTime', [student_home::class, 'insertSchoolTime']);
+Route::Get('school_time', [student_home::class, 'FetchSchoolTime']);

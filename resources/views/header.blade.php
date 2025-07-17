@@ -38,6 +38,9 @@
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:text-white">
                             <a href="teacher_form" class="nav-dropdown-link">Teachers_Add</a>
                         </li>
+                        <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:text-white">
+                            <a href="schooltime_form" class="nav-dropdown-link">schooltime_form</a>
+                        </li>
 
 
 
@@ -55,7 +58,7 @@
                     <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 bg-white w-60  ">
 
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:text-white">
-                            <a href="schooltime" class="nav-dropdown-link">School_Time</a>
+                            <a href="school_time" class="nav-dropdown-link">school_time</a>
                         </li>
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1 hover:bg-black hover:text-white">
                             <a href="teachers_team" class="nav-dropdown-link">Teachers_team</a>

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\home_section;
 use App\Models\home02_section;
 use App\Models\home_message;
-use App\Models\teacher;
+use App\Models\home_teacher;
 
 
 use Illuminate\Http\Request;
@@ -93,8 +93,28 @@ class student_home extends Controller
    }
 //    about page...........
 // insert
-function insertTeacherDetail(){
-    return "add";
+function insertTeacherDetail(Request $request){
+   $DataDetail=new home_teacher();
+   $DataDetail->name=$request->name;
+   $DataDetail->possition=$request->possition;
+   $DataDetail->Eduction=$request->edution;
+if($request->hasfile('image')){
+    $file=$request->file('image');
+    $filename=time(). '.'.$file->getClientOriginalExtension();
+    $file->move(public_path('uploads'),$filename);
+    $DataDetail->image=$filename;
+}   if ($DataDetail->save()) {
+
+            return redirect('/')->with("success", 'Details added successfully!');
+        } else {
+            return  redirect('/')->with("Error", "Somthing Wrong");
+        }
+}
+// GetTeachers Details
+
+function GetTeacherDetail(){
+    $GetDataDetail=home_teacher::all();
+    return view('about.teacher',['teacherInfo'=>$GetDataDetail]);
 }
 
 

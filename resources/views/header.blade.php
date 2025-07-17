@@ -35,6 +35,9 @@
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:text-white">
                             <a href="head_message" class="nav-dropdown-link">Head-Department-Add</a>
                         </li>
+                        <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:text-white">
+                            <a href="teacher_form" class="nav-dropdown-link">Teachers_Add</a>
+                        </li>
 
 
 

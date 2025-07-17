@@ -58,7 +58,7 @@
                             <a href="schooltime" class="nav-dropdown-link">School_Time</a>
                         </li>
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1 hover:bg-black hover:text-white">
-                            <a href="teacher" class="nav-dropdown-link">Teachers_team</a>
+                            <a href="teachers_team" class="nav-dropdown-link">Teachers_team</a>
                         </li>
                         <li class="nav-dropdown-item w-60 bg-gray-100 p-1 hover:bg-black hover:text-white">
                             <a href="Head_Department_message" class="nav-dropdown-link">Head-Department-message</a>

@@ -9,8 +9,8 @@
 
   <!-- Heading -->
   <div class="text-center mb-10">
-    <h2 class="text-3xl font-bold text-gray-800 uppercase">The School Committee</h2>
-    <p class="text-gray-600 mt-2 italic">“The Pillars of our Institution”</p>
+    <h2 class="text-3xl font-bold  uppercase text-blue-900">The School Committee</h2>
+    <p class="text-blue-900 mt-2 italic">“The Pillars of our Institution”</p>
   </div>
 
   <div class="max-w-6x2 mx-auto space-y-4 px-4">

@@ -9,7 +9,7 @@
 
   <!-- Heading -->
   <div class="text-center mt-10">
-    <h2 class="text-xl font-bold uppercase tracking-wider">List of News & Events</h2>
+    <h2 class="text-xl font-bold uppercase tracking-wider text-blue-900 ">List of News & Events</h2>
     <div class="mt-2 border-b-2 w-24 mx-auto border-pink-500"></div>
   </div>
 

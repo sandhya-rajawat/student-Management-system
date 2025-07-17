@@ -16,7 +16,7 @@
             <div class="flex flex-col items-center justify-center w-full space-y-10">
 
                 <!-- Heading -->
-                <h1 class="text-3xl font-bold text-gray-800">
+                <h1 class="text-3xl font-bold text-blue-900">
                     Head Of Department
                 </h1>
                 <div class="grid md:grid-cols-3 gap-6">
@@ -25,7 +25,7 @@
 
                     <div class="bg-white p-4 rounded-xl shadow-md">
                         <img src="{{ asset('uploads/' . $iteam->image) }}" class="w-40 h-40 object-cover rounded-full mx-auto mb-4" alt="Blog Image">
-                        <p class=" text-center mb-1 text-gray-700 text-sm mb-3 text-center bg-red-50 font-semibold" >{{$iteam->name}}</p>
+                        <p class=" text-center  text-gray-700 text-sm mb-3  bg-red-50 font-semibold" >{{$iteam->name}}</p>
                         <p class=" text-center mb-2">{{ $iteam->title }}</p>
                         <h1 class="text-xl text-center mb-1">{{ $iteam->description }}</h1>
                         <div class="flex space-x-4 text-gray-600 text-sm mt-2">

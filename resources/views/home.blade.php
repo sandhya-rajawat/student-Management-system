@@ -18,7 +18,7 @@
   <!-- About Section -->
   <div class="p-10 bg-gray-100">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4">About Our System</h2>
+      <h2 class="text-3xl font-bold mb-4 text-blue-900">About Our System</h2>
       <p class="text-gray-700">
         This system is designed to help educational institutions manage student data efficiently. It offers functionalities like adding, updating, deleting, and viewing student information in a secure and user-friendly interface.
       </p>
@@ -28,7 +28,7 @@
   <!-- Features Section -->
   <div class="p-10 bg-white">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl font-bold mb-6 text-center">Key Features</h2>
+      <h2 class="text-3xl font-bold mb-6 text-center text-blue-900">Key Features</h2>
       <div class="grid md:grid-cols-3 gap-6">
         @foreach($features as $item)
           <div class="bg-white p-4 rounded-xl shadow-md">

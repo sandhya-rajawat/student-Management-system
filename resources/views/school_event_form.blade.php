@@ -6,7 +6,7 @@
     @csrf
 
 
-    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">New Details Of Events</h2>
+    <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">New Details Of Events</h2>
 
     <!-- Title -->
     <div class="mb-5">

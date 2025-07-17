@@ -6,7 +6,7 @@
     @csrf
 
 
-    <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center"> New Head Department</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center text-blue-900"> New Head Department</h2>
 
     <!-- Title -->
     <div class="mb-5">

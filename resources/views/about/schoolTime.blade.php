@@ -13,7 +13,7 @@
 
   <!-- Section Heading -->
   <div class="text-center mt-5">
-    <h2 class="text-xl font-bold uppercase tracking-wider">School Timings</h2>
+    <h2 class="text-xl font-bold uppercase tracking-wider text-blue-900">School Timings</h2>
     <div class="mt-2 border-b-2 w-24 mx-auto border-pink-500"></div>
   </div>
 

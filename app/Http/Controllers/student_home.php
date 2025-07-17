@@ -141,6 +141,7 @@ function FetchSchoolTime(){
 }
 
 // School_Evets............
+// insert
 
 function insertSchoolEvents(Request $request){
 $DataSchoolEvents=new school_event();
@@ -159,6 +160,12 @@ if($request->hasFile('image')){
         }
 }
 }
+// fetch data
+function fetchSchoolEvents(){
+    $getSchoolEvents=school_event::all();
+    return view('about/event',["getinfo"=>$getSchoolEvents]);
+}
+
 
 
 

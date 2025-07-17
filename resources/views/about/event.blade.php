@@ -1,9 +1,10 @@
 
 @include('header')
 @vite('resources/css/app.css')
+<div class="min-h-[calc(120h-160px)] bg-gray-100 py-10 ">
 <!-- Header Image with Students -->
   <div class="relative">
-    <img src="{{asset('image/dance.jpg')}}" alt="Students in Classroom" class="w-full h-72 object-cover" />
+    <img src="{{asset('image/dance.jpg')}}" alt="Students in Classroom" class="w-full h-64 object-cover rounded-xl shadow-md" />
   </div>
 
   <!-- Heading -->
@@ -13,40 +14,23 @@
   </div>
 
   <!-- News Cards Grid -->
-  <div class="max-w-7xl mx-auto mt-10 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-
+  <div class="max-w-6xl mx-auto mt-10 px-4 grid grid-cols-3 sm:grid-cols-2 md:grid-cols-4 gap-6 cursor-pointer">
+@foreach($getinfo as $info)
     <!-- Card 1 -->
    <div class="bg-gray-50 shadow p-4 rounded-lg">
-      <img src="{{ asset('image/school.jpg') }}" alt="Event Image" class="w-full h-48 object-cover rounded" />
-      <h3 class="text-md font-semibold mt-4">Winners List In International Art Competition Organised By RANGOTSAV CELEBRATION</h3>
+      <img src="{{ asset('uploads/'.$info->image) }}" alt="Event Image" class="w-full h-48 object-cover rounded" />
+      <h3 class="text-md font-semibold mt-4 text-center">{{$info->name}}</h3>
       <div class="text-sm text-gray-600 mt-2">
-        <p>April 26, 2025</p>
-        <p> Activities2025, Important News</p>
-        <p> No Comments</p>
-      </div>
-    </div>
+        <p class="text-center text-sm">{{ $info->created_at->format('d M Y') }}</p>
 
-    <!-- Card 2 -->
-    <div class="bg-gray-50 shadow p-4 rounded-lg">
-      <img src="{{ asset('image/school.jpg') }}" alt="Event Image" class="w-full h-48 object-cover rounded" />
-      <h3 class="text-md font-semibold mt-4">Winners List In International Art Competition Organised By RANGOTSAV CELEBRATION</h3>
-      <div class="text-sm text-gray-600 mt-2">
-        <p>April 26, 2025</p>
-        <p> Activities2025, Important News</p>
-        <p>No Comments</p>
+        <p class="text-center text-sm"> {{$info->title}}</p>
       </div>
     </div>
+    @endforeach
 
-    <!-- Card 3 -->
-    <div class="bg-gray-50 shadow p-4 rounded-lg">
-      <img src="{{ asset('image/school.jpg') }}" alt="Event Image" class="w-full h-48 object-cover rounded" />
-      <h3 class="text-md font-semibold mt-4">Graduation Ceremony – Grade XII (Batch 2024-25)</h3>
-      <div class="text-sm text-gray-600 mt-2">
-        <p> February 27, 2025</p>
-        <p> Activities2023, Important News</p>
-        <p> No Comments</p>
-      </div>
-    </div>
+  
+
+  </div>
 
   </div>
   

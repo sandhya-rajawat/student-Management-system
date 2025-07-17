@@ -98,5 +98,6 @@ Route::post('insertSchoolTime', [student_home::class, 'insertSchoolTime']);
 Route::Get('school_time', [student_home::class, 'FetchSchoolTime']);
 
 
-// school_evets 
+// school_evets  fetchSchoolEvents
 Route::post('insertSchoolEvents', [student_home::class, 'insertSchoolEvents']);
+Route::get('school_event', [student_home::class, 'fetchSchoolEvents']);

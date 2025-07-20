@@ -1,4 +1,4 @@
-@include('header')
+@include('partials/header')
 @vite('resources/css/app.css')
 <div class="flex items-center justify-center min-h-[calc(120vh-160px)]
  bg-gray-100">
@@ -45,4 +45,4 @@
     </div>
   </form>
 </div>
-@include('footer')
+@include('partials/footer')

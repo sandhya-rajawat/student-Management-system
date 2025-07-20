@@ -1,4 +1,4 @@
-@include('header')
+@include('partials/header')
 @vite('resources/css/app.css')
 
 <!-- Full section with image + heading + cards -->
@@ -40,4 +40,4 @@
         </div>
     </div>
 
-    @include('footer')
+@include('partials/footer')

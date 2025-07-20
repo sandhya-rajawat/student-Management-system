@@ -1,8 +1,7 @@
-@include('header')
+@include('partials/header')
 @vite('resources/css/app.css')
-<div class="flex items-center justify-center min-h-[calc(100vh-120px)]
- bg-gray-100">
-  <form action="{{url('home02_section')}}"enctype="multipart/form-data" method="POST" class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg w-full max-w-lg">
+<div class="flex items-center justify-center min-h-[calc(100vh-120px)] bg-gray-100">
+  <form action="{{ url('homesectionOne') }}" method="POST" class="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg w-full max-w-lg">
     @csrf
 
 
@@ -14,12 +13,6 @@
       <input type="text" name="title" id="title"
              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
              placeholder="Enter title..." required>
-    </div>
-    <div class="mb-5">
-      <label for="title" class="block mb-1 text-gray-700 font-medium">image</label>
-      <input type="file" name="image" id="title"
-             class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
-             placeholder="Upload File..." required>
     </div>
 
     <!-- Description -->
@@ -34,9 +27,9 @@
     <div class="text-center">
       <button type="submit"
               class="bg-blue-900 hover:bg-blue-800 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-200">
-        Add
+        Submit
       </button>
     </div>
   </form>
 </div>
-@include('footer')
+@include('partials/footer')

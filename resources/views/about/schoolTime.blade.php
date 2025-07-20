@@ -1,5 +1,5 @@
 
-@include('header')
+@include('partials/header')
 @vite('resources/css/app.css')
 <div class="min-h-[calc(110vh-160px)] bg-gray-100 py-10">
 
@@ -36,4 +36,4 @@
 
   </div>
 </div>
-  @include('footer')
+@include('partials/footer')

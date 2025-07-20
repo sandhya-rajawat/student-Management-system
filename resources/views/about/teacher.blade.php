@@ -1,4 +1,4 @@
-@include('header')
+@include('partials/header')
 @vite('resources/css/app.css')
 <div class="w-full pt-18">
   <img src="{{ asset('image/teacher.png') }}" alt="School Timings" class="w-full h-64 object-cover">
@@ -33,4 +33,4 @@
   </div>
 </div>
 </div>
-@include('footer')
+@include('partials/footer')

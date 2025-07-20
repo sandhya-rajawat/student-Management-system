@@ -11,54 +11,57 @@ Route::get('/', function () {
 // header
 Route::view('header', 'header');
 Route::view('footer', 'footer');
-Route::view('/', 'about/home-blog');
+Route::view('/', 'home-blog');
 //home section
 Route::get('tour-content-form', function () {
-    return view('form-components/tour-content-form');
+    return view('tour-content-form');
 });
 
 Route::get('teacher-hod', function () {
-    return view('form-components/teacher-hod-form');
+    return view('teacher-hod');
 });
 
 Route::get('home-blog-form', function () {
-    return view('form-components/home-blog-form');
+    return view('home-blog-form');
 });
 
 // Head
-Route::get('message', function () {
-    return view('about/teacher-hod');
-});
+// Route::get('message', function () {
+//     return view('teacher-hod');
+// });
 // home_head
 Route::get('teacher-hod-form', function () {
-    return view('form-components/teacher-hod-form');
+    return view('teacher-hod-form');
 });
 // about_scool_time
 Route::get('schooltime', function () {
-    return view('about/school-time');
+    return view('school-time');
 });
 // about_scool_teacher
 Route::get('teacher', function () {
-    return view('about/teacher-community');
+    return view('teacher-community');
 });
 Route::get('teacher_form', function () {
-    return view('form-components/teacher-community-form');
+    return view('teacher-community-form');
 });
 
 // schoolTIme_Form
 Route::get('schooltime_form', function () {
-    return view('form-components/school-time-form');
+    return view('school-time-form');
 });
 
 // Events
 Route::get('event', function () {
-    return view('about/school-events');
+    return view('school-events');
 });
 
 // Events form
 Route::get('event_form', function () {
-    return view('form-components\school-events-form');
+    return view('school-events-form');
 });
+
+
+// login and logout
 
 
 

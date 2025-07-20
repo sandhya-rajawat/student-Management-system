@@ -4,18 +4,21 @@
         <!-- Logo -->
         <div class="flex items-center space-x-3">
             <a href="/"> <img src="{{ asset('image/logo.png') }}" alt="Logo" class="h-10" /></a>
-           <a href="/"> <h1 class="text-xl font-bold text-blue-900">𝙎𝙝𝙞𝙠𝙨𝙝𝙖</h1></a>
+            <a href="/">
+                <h1 class="text-xl font-bold text-blue-900">𝙎𝙝𝙞𝙠𝙨𝙝𝙖</h1>
+            </a>
         </div>
 
         <!-- Navigation Links  -->
-        <nav >
+        <nav>
             <ul class="flex space-x-6 text-sm font-medium text-gray-800 gap-20">
 
-               <a href="/"> <li class="nav-item nav-dropdown group relative hover:bg-green-500 hover:p-2 hover:rounded-xl hover:text-white  transition duration-100 ease-in-out hover:shadow-lg cursor-pointer">
-                   Home
-                  
+                <a href="/">
+                    <li class="nav-item nav-dropdown group relative hover:bg-green-500 hover:p-2 hover:rounded-xl hover:text-white  transition duration-100 ease-in-out hover:shadow-lg cursor-pointer">
+                        Home
+
                     </li>
-</a>
+                </a>
                 <!-- form -->
                 <li class="nav-item nav-dropdown group relative">
                     <span class="nav-link inline-flex  cursor-pointer items-center hover:bg-green-500 hover:p-2 hover:rounded-xl hover:text-white  transition duration-100 ease-in-out hover:shadow-lg">
@@ -24,9 +27,9 @@
                             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                         </svg>
                     </span>
-                    <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 w-30 ">
+                    <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 ">
 
-                        <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:rounded-xl hover:text-white">
+                        <li class="nav-dropdown-item bg-gray-100 p-1  hover:bg-black hover:rounded-xl hover:text-white">
                             <a href="tour-content-form" class="nav-dropdown-link">tour-content-form</a>
                         </li>
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:rounded-xl hover:text-white">
@@ -50,7 +53,7 @@
                     </ul>
                 </li>
 
-<!-- about section -->
+                <!-- about section -->
                 <li class="nav-item nav-dropdown group relative">
                     <span class="nav-link cursor-pointer inline-flex items-center hover:bg-green-500 hover:p-2 hover:rounded-xl hover:text-white  transition duration-100 ease-in-out hover:shadow-lg">
                         About School

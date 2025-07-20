@@ -27,13 +27,13 @@
                     <ul class="nav-dropdown-list hidden group-hover:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 w-30 ">
 
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:rounded-xl hover:text-white">
-                            <a href="homesection" class="nav-dropdown-link">Home_Message</a>
+                            <a href="tour-content-form" class="nav-dropdown-link">tour-content-form</a>
                         </li>
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:rounded-xl hover:text-white">
-                            <a href="home02_section" class="nav-dropdown-link">Home_blog</a>
+                            <a href="home-blog-form" class="nav-dropdown-link">home-blog-form</a>
                         </li>
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:rounded-xl hover:text-white">
-                            <a href="head_message" class="nav-dropdown-link">Head-Department-Add</a>
+                            <a href="teacher-hod-form" class="nav-dropdown-link">teacher-hod-form</a>
                         </li>
                         <li class="nav-dropdown-item w-full bg-gray-100 p-1  hover:bg-black hover:rounded-xl hover:text-white">
                             <a href="teacher_form" class="nav-dropdown-link">Teachers_Add</a>

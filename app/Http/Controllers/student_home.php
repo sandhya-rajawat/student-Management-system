@@ -62,7 +62,7 @@ class student_home extends Controller
         $data = home_section::latest()->first();
         $features = home02_section::all();
 
-        return view('home', [
+        return view('about/home-blog', [
             'data' => $data,
             'features' => $features
         ]);
@@ -90,11 +90,11 @@ class student_home extends Controller
    }
    function GetMessage(){
     $messageGet=home_message::all();
-    return view('home_message',['message'=>$messageGet]);
+    return view('about/tour-content',['message'=>$messageGet]);
 
    }
 //    about page...........
-// insert
+// insert Teachers
 function insertTeacherDetail(Request $request){
    $DataDetail=new home_teacher();
    $DataDetail->name=$request->name;
@@ -116,7 +116,7 @@ if($request->hasfile('image')){
 
 function GetTeacherDetail(){
     $GetDataDetail=home_teacher::all();
-    return view('about.teacher',['teacherInfo'=>$GetDataDetail]);
+    return view('about.teacher-community',['teacherInfo'=>$GetDataDetail]);
 }
 
 
@@ -137,7 +137,7 @@ function insertSchoolTime(Request $request){
 // Fetch data
 function FetchSchoolTime(){
     $GetTime=school_time::all();
-    return view('about/schoolTime',['GetTimeInfo'=> $GetTime]);
+    return view('about/school-time',['GetTimeInfo'=> $GetTime]);
 }
 
 // School_Evets............
@@ -163,7 +163,7 @@ if($request->hasFile('image')){
 // fetch data
 function fetchSchoolEvents(){
     $getSchoolEvents=school_event::all();
-    return view('about/event',["getinfo"=>$getSchoolEvents]);
+    return view('about/school-events',["getinfo"=>$getSchoolEvents]);
 }
 
 

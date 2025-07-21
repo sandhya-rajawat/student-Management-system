@@ -8,9 +8,12 @@ use App\Models\home_message;
 use App\Models\home_teacher;
 use App\Models\school_time;
 use App\Models\school_event;
+use App\Models\signup;
 
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class student_home extends Controller
 {
@@ -24,7 +27,7 @@ class student_home extends Controller
 
             return redirect('/')->with("success", 'Details added successfully!');
         } else {
-            return  redirect('/')->with("Error", "Somthing Wrong");
+            return back()->with("Error", "Somthing Wrong");
         }
     }
 
@@ -51,7 +54,7 @@ class student_home extends Controller
 
             return redirect('/')->with("success", 'Details added successfully!');
         } else {
-            return  redirect('/')->with("Error", "Somthing Wrong");
+            return  back()->with("Error", "Somthing Wrong");
         }
     }
 
@@ -85,7 +88,7 @@ class student_home extends Controller
 
             return redirect('/')->with("success", 'Details added successfully!');
         } else {
-            return  redirect('/')->with("Error", "Somthing Wrong");
+            return  back()->with("Error", "Somthing Wrong");
         }
    }
    function GetMessage(){
@@ -109,7 +112,7 @@ if($request->hasfile('image')){
 
             return redirect('/')->with("success", 'Details added successfully!');
         } else {
-            return  redirect('/')->with("Error", "Somthing Wrong");
+            return  back()->with("Error", "Somthing Wrong");
         }
 }
 // GetTeachers Details
@@ -130,7 +133,7 @@ function insertSchoolTime(Request $request){
 
             return redirect('/')->with("success", 'Details added successfully!');
         } else {
-            return  redirect('/')->with("Error", "Somthing Wrong");
+            return  back()->with("Error", "Somthing Wrong");
         }
 }
 
@@ -156,7 +159,7 @@ if($request->hasFile('image')){
 
             return redirect('/')->with("success", 'Details added successfully!');
         } else {
-            return  redirect('/')->with("Error", "Somthing Wrong");
+            return back()->with("Error", "Somthing Wrong");
         }
 }
 }
@@ -166,10 +169,37 @@ function fetchSchoolEvents(){
     return view('school-events',["getinfo"=>$getSchoolEvents]);
 }
 
-
-
-
-
-
-
+// login-page..
+// signup............
+function createUser(Request $request){
+$UserData= new signup;
+$UserData->name=$request->name;
+$UserData->email=$request->email;
+$UserData->phone=$request->phone;
+$UserData->password=$request->password;
+$UserData->gender=$request->gender;
+if($UserData->save()){
+     return redirect('/')->with("success", 'Details added successfully!');
+        } else {
+            back()->with("Error", 'Faile mission!!');
 }
+}
+// signin......................
+function userLogin(Request $request){
+
+    $GetUserData=signup::where('email',$request->email)->first();
+    if($GetUserData && Hash::check($request->password,$GetUserData->password)){
+        Session::put('profile',$GetUserData);
+          return redirect('/')->with('success', 'Logged in successfully!');
+    } else {
+        return back()->with('error', 'Invalid Email or Password');
+    }
+    }
+}
+
+
+
+
+
+
+

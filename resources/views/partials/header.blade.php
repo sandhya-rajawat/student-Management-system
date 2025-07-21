@@ -85,9 +85,10 @@
 
 
                 <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white hover:rounded-xl  transition duration-100 ease-in-out hover:shadow-lg">Facilities</a></li>
-                <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg">Activities</a></li>
+               
                 <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg">Contact Us</a></li>
-                <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg ">Pre-Primary</a></li>
+                <!-- <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg ">Pre-Primary</a></li> -->
+                <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg ">LogIn</a></li>
 
             </ul>
         </nav>

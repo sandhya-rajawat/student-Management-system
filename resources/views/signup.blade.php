@@ -1,4 +1,4 @@
-@include('partials.header') {{-- Fixed the include path --}}
+@include('partials.header')     
 @vite('resources/css/app.css')
 
 <div class="min-h-screen flex">
@@ -8,7 +8,7 @@
     <div class="max-w-md w-full space-y-6">
       <div class="flex items-center gap-2">
         <img src="{{ asset('image/logo.png') }}" class="w-6 h-6" alt="Logo">
-        <h1 class="text-3xl font-bold text-gray-800">Sign In</h1>
+        <h1 class="text-3xl font-bold text-gray-800">Sign Up</h1>
       </div>
 
       <p class="text-gray-500">Donec sollicitudin molestie malesuada sollicitudin</p>
@@ -25,12 +25,29 @@
         <hr class="w-1/4 border-gray-300">
       </div>
 
-      <form method="POST" action="{{url('signin')}}" class="space-y-4">
+      <form method="POST" action="{{url('signup')}}" class="space-y-4">
+        @csrf
+        <div>
+          <label class="text-sm font-medium text-gray-700 block mb-1">Name</label>
+          <input type="text" name="name" placeholder="Enter Name...." required
+                 class="w-full bg-blue-50 p-2 rounded-md border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
         <div>
           <label class="text-sm font-medium text-gray-700 block mb-1">Email Address</label>
           <input type="email" name="email" placeholder="you@example.com" required
                  class="w-full bg-blue-50 p-2 rounded-md border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
+        <div>
+          <label class="text-sm font-medium text-gray-700 block mb-1">Contact</label>
+          <input type="text" name="phone" placeholder="Your Contact...." required
+                 class="w-full bg-blue-50 p-2 rounded-md border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label class="text-sm font-medium text-gray-700 block mb-1">Gender</label>
+          <input type="text" name="gender" placeholder="Enter gender....." required
+                 class="w-full bg-blue-50 p-2 rounded-md border border-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+      
 
         <div>
           <label class="text-sm font-medium text-gray-700 block mb-1">Password</label>
@@ -64,4 +81,4 @@
 
 </div>
 
-@include('partials.footer') {{-- Fixed the include path --}}
+@include('partials.footer')

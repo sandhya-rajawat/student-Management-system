@@ -49,7 +49,7 @@
   <div class="bg-blue-200 text-white p-10 text-center">
     <h2 class="text-3xl font-bold mb-4">Get Started Now</h2>
     <p class="mb-6">Start managing your student records efficiently today.</p>
-    <a href="signin" class="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Sign In</a>
+    <a href="signup" class="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Sign In</a>
   </div>
 
 </div>

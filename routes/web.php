@@ -62,8 +62,13 @@ Route::get('event_form', function () {
 
 
 // login and logout
+// signin
 Route::get('signin', function () {
     return view('signin');
+});
+// signup
+Route::get('signup', function () {
+    return view('signup');
 });
 
 
@@ -112,3 +117,10 @@ Route::Get('school_time', [student_home::class, 'FetchSchoolTime']);
 // school_evets  fetchSchoolEvents
 Route::post('insertSchoolEvents', [student_home::class, 'insertSchoolEvents']);
 Route::get('school_event', [student_home::class, 'fetchSchoolEvents']);
+
+
+
+// login page..............
+// signup...................page 
+Route::post('signup', [student_home::class,'createUser']);
+Route::get('signin', [student_home::class,'userLogin']);

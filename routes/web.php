@@ -62,6 +62,10 @@ Route::get('event_form', function () {
 
 
 // login and logout
+Route::get('signin', function () {
+    return view('signin');
+});
+
 
 
 

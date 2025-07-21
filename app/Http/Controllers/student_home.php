@@ -176,7 +176,7 @@ $UserData= new signup;
 $UserData->name=$request->name;
 $UserData->email=$request->email;
 $UserData->phone=$request->phone;
-$UserData->password=$request->password;
+$UserData->password = Hash::make($request->password);
 $UserData->gender=$request->gender;
 if($UserData->save()){
      return redirect('/')->with("success", 'Details added successfully!');

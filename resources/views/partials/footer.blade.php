@@ -1,7 +1,7 @@
 @vite('resources/css/app.css')
 
-<footer class="mt-auto backdrop-blur-md shadow-md">
-  <div class="bg-gray-200 p-6 text-gray-800">
+<footer class=" mt-20 h-60 backdrop-blur-md bg-gray-200 p-6 text-gray-800 shadow-md">
+  <div class=" p-6 text-gray-800  ">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-1">
       
       <!-- Left: Logo + School Info -->
@@ -15,7 +15,9 @@
       </div>
 
       <!-- Right: Social Links -->
+   
       <div class="flex gap-4">
+       
         <a href="#"><img src="{{asset('image/whatsapp.png')}}" class="w-6"></a>
         <a href="#"><img src="{{asset('image/facebook.png')}}" class="w-6"></a>
         <a href="#"><img src="{{asset('image/twitter.png')}}" class="w-6"></a>

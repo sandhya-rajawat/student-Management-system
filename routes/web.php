@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\student;
 use App\Http\Controllers\student_home;
+use Illuminate\Support\Facades\Session;
 
 Route::get('/', function () {
     return view('welcome');
@@ -62,13 +63,15 @@ Route::get('event_form', function () {
 
 
 // login and logout
-// signin
-Route::get('signin', function () {
-    return view('signin');
-});
+
 // signup
 Route::get('signup', function () {
     return view('signup');
+});
+
+// signin
+Route::get('signin', function () {
+    return view('signin');
 });
 
 
@@ -123,4 +126,9 @@ Route::get('school_event', [student_home::class, 'fetchSchoolEvents']);
 // login page..............
 // signup...................page 
 Route::post('signup', [student_home::class,'createUser']);
-Route::get('signin', [student_home::class,'userLogin']);
+Route::post('signin', [student_home::class,'userLogin']);
+
+Route::get('/signout', function () {
+    Session::forget('profile');
+    return redirect('/signin')->with('success', 'Logged out successfully!');
+});

@@ -6,7 +6,7 @@
 
   <!-- Hero Section -->
   <div class="relative">
-    <img src="{{ asset('image/students.webp') }}" alt="students" class="w-screen h-[400px] object-cover">
+    <img src="{{ asset('image/students.webp') }}" alt="students" class="w-screen h-full ">
 
     <!-- Positioned content -->
     <div class="absolute top-[150px] left-10 bg-white/80 p-6 rounded-xl shadow-lg max-w-lg">
@@ -26,7 +26,7 @@
   </div>
 
   <!-- Features Section -->
-  <div class="p-10 bg-white">
+  <div class="p-10 bg-white mt-10">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-3xl font-bold mb-6 text-center text-blue-900">Key Features</h2>
       <div class="grid md:grid-cols-3 gap-6">
@@ -45,12 +45,12 @@
     </div>
   </div>
 
-  <!-- Call to Action -->
+  <!-- Call to Action
   <div class="bg-blue-200 text-white p-10 text-center">
     <h2 class="text-3xl font-bold mb-4">Get Started Now</h2>
     <p class="mb-6">Start managing your student records efficiently today.</p>
     <a href="signup" class="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Sign In</a>
-  </div>
+  </div> -->
 
 </div>
 

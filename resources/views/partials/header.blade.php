@@ -1,5 +1,5 @@
 @vite('resources/css/app.css')
-<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-md">
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-md h-20">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <!-- Logo -->
         <div class="flex items-center space-x-3">
@@ -88,7 +88,12 @@
                
                 <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg">Contact Us</a></li>
                 <!-- <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg ">Pre-Primary</a></li> -->
-                <li><a href="#" class=" hover:bg-green-500 hover:p-2 hover:text-white  hover:rounded-xl transition duration-100 ease-in-out hover:shadow-lg ">LogIn</a></li>
+@if(Session::has('profile'))
+    <a href="/signout" class="text-red-500">Sign Out</a>
+@else
+    <a href="/signin" class="text-green-500">Sign In</a>
+@endif
+
 
             </ul>
         </nav>

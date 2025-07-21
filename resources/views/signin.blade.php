@@ -26,6 +26,7 @@
       </div>
 
       <form method="POST" action="{{url('signin')}}" class="space-y-4">
+        @csrf
         <div>
           <label class="text-sm font-medium text-gray-700 block mb-1">Email Address</label>
           <input type="email" name="email" placeholder="you@example.com" required

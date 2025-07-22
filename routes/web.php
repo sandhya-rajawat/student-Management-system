@@ -131,4 +131,4 @@ Route::post('signin', [student_home::class,'userLogin']);
 Route::get('/signout', function () {
     Session::forget('profile');
     return redirect('/signin')->with('success', 'Logged out successfully!');
-});
+});,

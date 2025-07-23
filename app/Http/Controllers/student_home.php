@@ -196,28 +196,22 @@ function userLogin(Request $request){
     }
     }
 
-    // form sequrity authenticated...................
 
-    function tourContent(){
-        return view('tour-content-form');
 
+// blog-details
+  public function GetBlogDetails()
+    {
+    
+        $features = home02_section::all();
+
+        return view('blog-details', [
+          
+            'features' => $features
+        ]);
     }
 
 
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
 
 
 

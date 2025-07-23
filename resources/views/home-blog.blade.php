@@ -33,7 +33,7 @@
         @foreach($features as $item)
         <div class="bg-white p-4 rounded-xl shadow-md">
           <img src="{{ asset('uploads/' . $item->image) }}" class="w-full h-40 object-cover rounded-lg mb-4" alt="Blog Image">
-          <h3 class="text-xl font-semibold mb-2">{{ $item->title }}</h3>
+          <a href="blog-detils"><h3 class="text-xl font-semibold mb-2  cursor-pointer">{{ $item->title }}</h3></a>
           <p class="text-gray-700 text-sm mb-3">{{ $item->description }}</p>
           <div class="flex space-x-4 text-gray-600 text-sm mt-2">
             <p>Created: {{ $item->created_at->format('d M Y') }}</p>

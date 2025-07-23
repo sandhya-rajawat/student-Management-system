@@ -195,7 +195,27 @@ function userLogin(Request $request){
         return back()->with('error', 'Invalid Email or Password');
     }
     }
+
+    // form sequrity authenticated...................
+
+    function tourContent(){
+        return view('tour-content-form');
+
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
 
 
 

@@ -14,9 +14,9 @@ Route::view('header', 'header');
 Route::view('footer', 'footer');
 Route::view('/', 'home-blog');
 //home section
-Route::get('tour-content-form', function () {
-    return view('tour-content-form');
-});
+// Route::get('tour-content-form', function () {
+//     return view('tour-content-form');
+// });
 
 Route::get('teacher-hod', function () {
     return view('teacher-hod');
@@ -131,4 +131,14 @@ Route::post('signin', [student_home::class,'userLogin']);
 Route::get('/signout', function () {
     Session::forget('profile');
     return redirect('/signin')->with('success', 'Logged out successfully!');
-});,
+});
+
+
+// form Authenticated.........
+Route::middleware(['ProfileAuth'])->group(function(){
+    Route::get('tour-content-form',[student_home::class,'tourContent']);
+ 
+
+
+
+});

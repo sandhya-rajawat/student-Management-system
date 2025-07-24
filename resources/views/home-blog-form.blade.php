@@ -40,3 +40,4 @@
   </form>
 </div>
 @include('partials/footer')
+<!-- d -->
